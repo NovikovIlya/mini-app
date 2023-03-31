@@ -40,11 +40,16 @@ function Home(){
 	
 	  return (
 		<>
-		<div className='main'>
 		<div className={`modale animated ${open ? 'showed' : ''} `}>
 			<CreateCarForm setCars={setCars} smenaVida={smenaVida}  load={load} />
 		</div> 
-		 
+		<div className={open ? '' : 'main1'}>
+	
+
+		
+		<div className='main'>
+		{/* <button className='btn1 btnSign2'> </button> */}
+		<button className=' btnSign2'> </button>
 		  <button onClick={()=>{
 			setOpen(true);
 			}}  className='btn btnSign'>Выбрать другой знак</button>
@@ -84,6 +89,7 @@ function Home(){
 			  <p className='textHome'>Попробуйте выбрать знак через несколько минут</p> 
 			  }
 		  </div>
+		</div>
 		</div>
 		</>
 	  );

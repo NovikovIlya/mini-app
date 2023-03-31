@@ -72,7 +72,7 @@ body{
   padding-bottom: 4px;
   display: flex;
   flex-wrap: wrap;
-  overflow: visible;
+  overflow: hidden;
     z-index: 1000;
     position: absolute;
     /* position: absolute ; */
@@ -88,7 +88,7 @@ body{
     /* top:19%;
     right:36%;; */
     width: 100%;
-    height: auto;
+    height:max-content;
     margin: 0 auto;
     margin-top: -80px !important;
 }
@@ -319,17 +319,31 @@ body{
   margin-bottom: 20px;
   color: white !important;
 }
+.btnSign2{
+  opacity: 0;
+  margin-top: 8px;
+
+}
+.btnSign3{
+  opacity: 0;
+  margin-top: 8px;
+}
 
 /* .vkuiSplitCol {
   background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM=');
   height: 120vh;
   padding-bottom: 25px;
 } */
-.vkui--sizeX-none{
+.main1{
+  height: 100vh;
+  /* padding-top: 40px; */
+ 
   /* background-color: #FF3CAC;
   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-  background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM=');
+  background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM='); 
+ 
   
+  /* background: linear-gradient(180deg, rgba(10,10,10,10.7763480392156863) 0%, rgba(127,200,255,1) 50%, rgba(10,10,10,10.804359243697479) 100%); */
   /* height: 100vh; */
 }
 /* .vkui--sizeX-none{

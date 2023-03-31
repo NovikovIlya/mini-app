@@ -352,6 +352,9 @@ function fooButtonClick()
 
           <div className="container">
           <div className="row">
+          <div className=' btnSign3'>ss</div>
+          <div className=' btnSign3'>s</div>
+          
             <div className="col-md-12 text-center">
                 <h3 className="animate-charcter"> Любовный гороскоп</h3>
               </div>
