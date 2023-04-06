@@ -16,6 +16,7 @@ function Home(){
 	  const [isLoading,setLoading] = useState(true)
 	  const [open,setOpen] = useState(true)
 	  const [pokazivay,setPoazivay] = useState()
+	  const [izvinite,setizvinite] = useState(false)
 
 	  const smenaVida = ()=>{
 		setOpen(false);
@@ -31,17 +32,26 @@ function Home(){
 	  window.addEventListener("popstate", (event) => {
 		event.preventDefault();
 		if (open === true){
-			setOpen(false);
+			// setOpen(false);
+			history.back()
 		}
 		if (open === false)
 			setOpen(true);
 		}
 	  );
+
+	  const izvinite1 = ()=>{
+		setizvinite(true)
+	  }
+
+	  const load1 = ()=>{
+		setLoading(true)
+	  }
 	
 	  return (
 		<>
 		<div className={`modale animated ${open ? 'showed' : ''} `}>
-			<CreateCarForm setCars={setCars} smenaVida={smenaVida}  load={load} />
+			<CreateCarForm setCars={setCars} smenaVida={smenaVida}  load={load} izvinite1={izvinite1} load1={load1}/>
 		</div> 
 		<div className={open ? '' : 'main1'}>
 	
@@ -69,8 +79,7 @@ function Home(){
 			  </div>
 			   : 
 				
-				cars.length 
-			  ? cars.map(car => (
+				 cars.map(car => (
 				<div key={car.id} className="flip-card">
 				  <div className="flip-card-inner">
 					<div className="flip-card-front">
@@ -85,9 +94,9 @@ function Home(){
 				</div>
 				  
 			  ))
-			  : 
-			  <p className='textHome'>Попробуйте выбрать знак через несколько минут</p> 
+			 
 			  }
+			  {izvinite?<p className='textHome'>Попробуйте выбрать знак через несколько минут</p>  : '' }
 		  </div>
 		</div>
 		</div>

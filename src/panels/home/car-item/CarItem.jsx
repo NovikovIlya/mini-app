@@ -25,8 +25,8 @@ function CarItem({car}){
                 car.dataName === 'Рак'? 'https://i.ibb.co/bFxhsnR/image.png': 
                 car.dataName === 'Лев'? 'https://i.ibb.co/gdD6Pvc/image.png': 
                 car.dataName === 'Дева'? 'https://i.ibb.co/Yk58mVH/image.png': 
-                car.dataName === 'Весы'? 'https://i.ibb.co/Yk58mVH/image.png': 
-                car.dataName === 'Скорпион'? 'https://i.ibb.co/JQNqT8W/image.png': 
+                car.dataName === 'Весы'? 'https://upload.wikimedia.org/wikipedia/commons/7/74/RR5110-0042R_%D0%92%D0%B5%D1%81%D1%8B.gif': 
+                car.dataName === 'Скорпион'? 'https://upload.wikimedia.org/wikipedia/commons/1/11/RR5110-0043R_%D0%A1%D0%BA%D0%BE%D1%80%D0%BF%D0%B8%D0%BE%D0%BD.gif': 
                 car.dataName === 'Стрелец'? 'https://i.ibb.co/YP6FTvB/image.png': 
                 car.dataName === 'Козерог'? 'https://i.ibb.co/ZfCPJvd/image.png': 
                 car.dataName === 'Водолей'? 'https://i.ibb.co/5xzMgHM/image.png': 

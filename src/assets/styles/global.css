@@ -308,10 +308,14 @@ body{
 
 .pokazatZad{
   opacity: 1;
+  pointer-events: visible;
+  /* display: block; */
 }
 
 .scrytZad{
   opacity: 0;
+  pointer-events: none
+  /* display: none; */
 }
 
 .textNaz{
@@ -340,7 +344,17 @@ body{
  
   /* background-color: #FF3CAC;
   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-  background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM='); 
+  /* 
+   */
+   background-color: #FF3CAC;
+   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+   
+   
+   
+   
+   
+   
+
  
   
   /* background: linear-gradient(180deg, rgba(10,10,10,10.7763480392156863) 0%, rgba(127,200,255,1) 50%, rgba(10,10,10,10.804359243697479) 100%); */

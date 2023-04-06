@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 
-const CreateCarForm = ({setCars,smenaVida,oven1,load}) => {
+const CreateCarForm = ({setCars,smenaVida,oven1,load,izvinite1,load1}) => {
   const [zad,setZad] = useState(false)
   const [telec,setTelec] = useState(false)
 
@@ -85,20 +85,33 @@ function fooButtonClick()
 
   const handleSubmitKozerog = (event) => {
     event.preventDefault();
-    setTimeout(load,2000)
+  //   if (zad === false){
+  //     setTimeout(load,5000)
+  //  } 
+  setCars('')
+  load1()
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/capricorn/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Козерог'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/capricorn/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Козерог'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
 
-      console.log(data);
-      console.log(value);
-      setZad(true);
     }
     ha()
 
@@ -106,20 +119,29 @@ function fooButtonClick()
   };
   const handleSubmitOven = (event) => {
     event.preventDefault();
-    setTimeout(load,2000)
+    setCars('')
+    load1()
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/aries/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Овен'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/aries/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Овен'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -127,22 +149,29 @@ function fooButtonClick()
   const handleSubmitTaurus = (event) => {
 
     event.preventDefault();
-    setTimeout(load,2000)
+    setCars('')
+    load1()
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/taurus/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Телец'
-      createCar(event,data,dataName)
-
-      if (zad === false){
-        setTimeout(fooButtonClick,1000)
-      } 
-
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/taurus/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Телец'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -150,20 +179,30 @@ function fooButtonClick()
   };
   const handleSubmitGemini = (event) => {
     event.preventDefault();
-    setTimeout(load,2000)
-    async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/gemini/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Близнецы'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
+    setCars('')
+    load1()
 
-      console.log(data);
-      console.log(value);
-      setZad(true);
+    async function ha(){
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/gemini/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Близнецы'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -171,20 +210,30 @@ function fooButtonClick()
   };
   const handleSubmitCancer = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/cancer/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Рак'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/cancer/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Рак'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -192,20 +241,30 @@ function fooButtonClick()
   };
   const handleSubmitLeo = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/leo/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Лев'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/leo/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Лев'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -213,20 +272,30 @@ function fooButtonClick()
   };
   const handleSubmitVirgio = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/virgo/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Дева'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/virgo/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Дева'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -234,20 +303,30 @@ function fooButtonClick()
   };
   const handleSubmitLibra = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/libra/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Весы'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/libra/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Весы'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -255,20 +334,30 @@ function fooButtonClick()
   };
   const handleSubmitScorpio = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/scorpio/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Скорпион'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/scorpio/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Скорпион'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -276,20 +365,30 @@ function fooButtonClick()
   };
   const handleSubmitSagittarius = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/sagittarius/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Стрелец'
-      createCar(event,data,dataName)
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/sagittarius/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Стрелец'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -297,22 +396,30 @@ function fooButtonClick()
   };
   const handleSubmitAquarius = (event) => {
     event.preventDefault();
+    setCars('')
+    load1()
     setTimeout(load,2000)
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/aquarius/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Водолей'
-      createCar(event,data,dataName)
-
-
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/aquarius/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Водолей'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -320,21 +427,29 @@ function fooButtonClick()
   };
   const handleSubmitPisces = (event) => {
     event.preventDefault();
-    setTimeout(load,2000)
+    setCars('')
+    load1()
     async function ha(){
-      smenaVida();
-      const response = await axios.get(`https://api.allorigins.win/raw?url=https://horoscopes.rambler.ru/api/front/v3/horoscope/love/pisces/today/`)
-      const data = response.data.content.text[0].content
-      const dataName = 'Рыбы'
-      createCar(event,data,dataName)
-
-      if (zad === false){
-         setTimeout(fooButtonClick,1000)
-      } 
-
-      console.log(data);
-      console.log(value);
-      setZad(true);
+      try {
+        smenaVida();
+        const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/pisces/full/`)
+        const data = response.data.content.text[0].content
+        const dataName = 'Рыбы'
+        createCar(event,data,dataName)
+        if (zad === false){
+           setTimeout(fooButtonClick,1000)
+        } 
+  
+        console.log(data);
+        console.log(value);
+        setZad(true);
+      } catch (error) {
+        smenaVida();
+        izvinite1()
+      }
+      finally{
+        setTimeout(load,100)
+      }
     }
     ha()
 
@@ -431,7 +546,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Libra_symbol_%28fixed_width%29.svg/80px-Libra_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Весы</div>
-                    <div className='textZodiac'>23 сентября - 22 октября</div>
+                    <div className='textZodiac'>23 сентября - 23 октября</div>
                   </div>
                 </div>
               </button>
@@ -440,7 +555,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Scorpius_symbol_%28fixed_width%29.svg/80px-Scorpius_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Скорпион</div>
-                    <div className='textZodiac'>23 октября - 21 ноября</div>
+                    <div className='textZodiac'>24 октября - 22 ноября</div>
                   </div>
                 </div>
               </button>
@@ -449,7 +564,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Sagittarius_symbol_%28fixed_width%29.svg/80px-Sagittarius_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Стрелец</div>
-                    <div className='textZodiac'>22 ноября - 21 декабря</div>
+                    <div className='textZodiac'>23 ноября - 21 декабря</div>
                   </div>
                 </div>
               </button>
