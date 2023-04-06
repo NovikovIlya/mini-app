@@ -294,10 +294,10 @@ body{
     margin-bottom: 7px;
   }
   .textObolon{
-    font-size: 14px;
+    font-size: 13px;
   }
   .textZodiac {
-    font-size: 9px !important;
+    font-size: 8px !important;
   }
 }
 
@@ -339,7 +339,8 @@ body{
   padding-bottom: 25px;
 } */
 .main1{
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   /* padding-top: 40px; */
  
   /* background-color: #FF3CAC;
@@ -383,6 +384,7 @@ body{
   flex-wrap: wrap;
   height: 60px;
   align-items: center;
+  width: 100%;
 }
 
 .imageZod{

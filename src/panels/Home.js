@@ -71,7 +71,7 @@ function Home(){
 
   
 		  <div className='batya' >
-		 
+		  	
 			  {isLoading? 
 			  <div className='zagzag'>
 				<h1 className='zagryzka'>Идет загрузка</h1>
