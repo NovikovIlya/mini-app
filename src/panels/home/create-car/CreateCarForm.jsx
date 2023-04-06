@@ -88,7 +88,7 @@ function fooButtonClick()
   //   if (zad === false){
   //     setTimeout(load,5000)
   //  } 
-  setCars('')
+  setCars([])
   load1()
     async function ha(){
       try {
@@ -119,7 +119,7 @@ function fooButtonClick()
   };
   const handleSubmitOven = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     async function ha(){
       try {
@@ -149,7 +149,7 @@ function fooButtonClick()
   const handleSubmitTaurus = (event) => {
 
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     async function ha(){
       try {
@@ -179,7 +179,7 @@ function fooButtonClick()
   };
   const handleSubmitGemini = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
 
     async function ha(){
@@ -210,7 +210,7 @@ function fooButtonClick()
   };
   const handleSubmitCancer = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -241,7 +241,7 @@ function fooButtonClick()
   };
   const handleSubmitLeo = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -272,7 +272,7 @@ function fooButtonClick()
   };
   const handleSubmitVirgio = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -303,7 +303,7 @@ function fooButtonClick()
   };
   const handleSubmitLibra = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -334,7 +334,7 @@ function fooButtonClick()
   };
   const handleSubmitScorpio = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -365,7 +365,7 @@ function fooButtonClick()
   };
   const handleSubmitSagittarius = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -396,7 +396,7 @@ function fooButtonClick()
   };
   const handleSubmitAquarius = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     setTimeout(load,2000)
     async function ha(){
@@ -427,7 +427,7 @@ function fooButtonClick()
   };
   const handleSubmitPisces = (event) => {
     event.preventDefault();
-    setCars('')
+    setCars([])
     load1()
     async function ha(){
       try {
