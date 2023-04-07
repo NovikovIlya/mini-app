@@ -37,9 +37,11 @@ function CarItem({car}){
             {/* <h2>Узнайте</h2> */}
             {/* {/person/ig.test(window.location.href)? '' : <Link to={`person/${car.id}`} className='btn'>Узнать больше</Link> } */}
             <p className='para'>{car.data}</p>
-            <img className='imageHead imageHead__two' src='https://i.ibb.co/StMymcp/A4k-H2n-gr-transformed.png'></img>
-       
+           
             </div>
+            <div className='bottomImg'>
+                <img className='imageHead imageHead__two' src='https://i.ibb.co/StMymcp/A4k-H2n-gr-transformed.png'></img>
+             </div>
         </div>
     )
 }
