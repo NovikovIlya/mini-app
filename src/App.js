@@ -10,7 +10,8 @@ const App = () => {
 	
 	bridge.send('VKWebAppResizeWindow', {
 		width: 800,
-		height: 1370
+		// height: 1370
+		height: 1126
 		})
 		.then((data) => { 
 		  if (data.width) {

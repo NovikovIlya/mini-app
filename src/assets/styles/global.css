@@ -11,22 +11,13 @@
 }
 
 body{
-background: #0f0c29;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
-background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
   color:white;
   padding: 30px 20px;
 }
 
-.vkui--sizeX-none{
-background: #0f0c29;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
-background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 
 .main{
   margin: 0 auto;
@@ -93,36 +84,44 @@ text-decoration: none;
 color:white;
 }
 
+
+
 .modale {
-padding-bottom: 4px;
+/* padding-bottom: 4px; */
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-overflow: hidden;
+overflow: visible;
   z-index: 1000;
   position: absolute;
-  /* position: absolute ; */
-  background-color: #D9AFD9;
+  /* position:fixed; */
+  /* background-color: #D9AFD9;
 background-image: -webkit-gradient(linear, left bottom, left top, from(#D9AFD9), to(#97D9E1));
 background-image: -o-linear-gradient(bottom, #D9AFD9 0%, #97D9E1 100%);
-background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #000000 , #6f0000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #000000 , #6f0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   /* background-image: url('https://static.vecteezy.com/system/resources/previews/011/536/252/non_2x/mystical-and-celestial-elements-with-stars-planets-moons-and-hands-cosmic-starry-zodiac-elements-occult-esoteric-design-vector.jpg'); */
   background-repeat: no-repeat;
   background-size:cover;
   border: 1px solid rgb(0, 0, 0);
+  top: 0;
   right: 0;
-  top:0;
   /* top:19%;
   right:36%;; */
   width: 100%;
   height:-webkit-max-content;
   height:-moz-max-content;
   height:max-content;
+  
   margin: 0 auto;
-  margin-top: -80px !important;
+  /* overflow: auto; */
+  /* margin-top: -80px !important; */
 }
 .modaleBtn{
 margin: 0 auto;
@@ -131,6 +130,7 @@ width: 500px;
 .nazad{
 cursor: pointer;
 text-align: center;
+vertical-align: middle;
 color: white !important;
 margin-top:20px;
 margin-bottom: 10px;
@@ -143,7 +143,8 @@ scale: 1.1;
   display: none;
 }
 .modalochka2{
-padding-bottom: 42px;
+/* padding-bottom: 42px; */
+
 }
 
 .showed{
@@ -307,7 +308,7 @@ margin-top: -45px;
   /* position: relative; */
   right: 0;
   margin: 0 auto;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .modaleBtn{
   width: 100%;
@@ -389,7 +390,13 @@ background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-
 height: 120vh;
 padding-bottom: 25px;
 } */
+.vkui--sizeX-none {
+  background: rgb(0,0,0);
+}
 .main1{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.7763480392156863) 0%, rgba(108,167,212,1) 50%, rgba(0,0,0,0.804359243697479) 100%);
+
 /* background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM='); */
 /* height: 100vh; */
 height: 100%;

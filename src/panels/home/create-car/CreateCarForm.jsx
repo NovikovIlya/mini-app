@@ -87,6 +87,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
   setCars([])
@@ -94,6 +95,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/capricorn/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Козерог'
@@ -123,6 +125,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -130,6 +133,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/aries/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Овен'
@@ -157,6 +161,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -164,6 +169,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/taurus/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Телец'
@@ -192,6 +198,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -199,6 +206,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/gemini/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Близнецы'
@@ -227,6 +235,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -235,6 +244,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/cancer/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Рак'
@@ -263,6 +273,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -271,6 +282,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/leo/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Лев'
@@ -299,6 +311,8 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
+      
       return;
     }
     setCars([])
@@ -307,6 +321,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/virgo/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Дева'
@@ -335,6 +350,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -343,6 +359,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/libra/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Весы'
@@ -371,6 +388,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -379,6 +397,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/scorpio/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Скорпион'
@@ -407,6 +426,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -415,6 +435,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/sagittarius/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Стрелец'
@@ -443,6 +464,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -451,6 +473,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/aquarius/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Водолей'
@@ -479,6 +502,7 @@ function fooButtonClick()
     event.preventDefault();
     if (conditionValue){
       smenaVida();
+      izvinite1()
       return;
     }
     setCars([])
@@ -486,6 +510,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
+        window.scrollBy(0, 0)
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/pisces/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Рыбы'
@@ -515,15 +540,15 @@ function fooButtonClick()
 
   return (
     <>
-    <div className={`modalochka  ${zad ? 'modalochka2' : ''}`}>
+    <div className={`modalochka  modalochka2`}>
         
 
         <form  id='formElem' > 
 
           <div className="container">
           <div className="row">
-          <div className=' btnSign3'>ss</div>
-          <div className=' btnSign3'>s</div>
+          {/* <div className=' btnSign3'>ss</div> */}
+          {/* <div className=' btnSign3'>s</div> */}
           
             <div className="col-md-12 text-center">
                 <h3 className="animate-charcter"> Любовный гороскоп</h3>
@@ -539,7 +564,7 @@ function fooButtonClick()
 
             }}>←Назад</p>
             <div className='modaleBtn'>
-            <div className='textNaz'>{zad? '' : `Выбери свой знак`}</div>
+            <div className={`textNaz ${zad? 'scrytZad' : ''} `} >Выбери свой знак</div>
              
               
               <button className='btn1'  onClick={handleSubmitOven}>
