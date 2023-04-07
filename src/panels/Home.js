@@ -112,7 +112,7 @@ function Home(){
 					</div>
 					<div key={car.id} className="flip-card-back">
 					  <CarItem key={car.id} car={car}/>
-					  
+						
 					</div>
 				  </div>
 				</div>

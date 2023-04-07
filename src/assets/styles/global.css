@@ -291,6 +291,11 @@ height: 20%;
 .imageHead__two{
 margin-top: -45px;
 }
+.bottomImg{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
 
 @media screen and (max-width:600px){
   .btn:hover,.btn1:hover{

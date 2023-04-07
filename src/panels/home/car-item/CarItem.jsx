@@ -41,7 +41,7 @@ function CarItem({car}){
             </div>
             <div className='bottomImg'>
                 <img className='imageHead imageHead__two' src='https://i.ibb.co/StMymcp/A4k-H2n-gr-transformed.png'></img>
-             </div>
+            </div>
         </div>
     )
 }
