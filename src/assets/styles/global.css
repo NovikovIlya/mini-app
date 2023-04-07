@@ -1,549 +1,681 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body{
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
-    color:white;
-    padding: 30px 20px;
+background: #0f0c29;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color:white;
+  padding: 30px 20px;
+}
+
+.vkui--sizeX-none{
+background: #0f0c29;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main{
-    margin: 0 auto;
-    width: 500px;
-}
-
-.btn{
-    display:block;
-    padding: 10px;
-    border:none;
-    border-radius: 5px;
-    /* background-color: aqua; */
-    background-color: #f8fbff;
-    color: black;
-    margin: 0 auto;
-    margin-top: 20px;
-    /* margin-bottom: 10px; */
-}
-.btn:hover{
-  background-color: rgb(92, 86, 86);
-  color: white;
-  cursor: pointer;
-  scale:1.1;
-}
-.btn1{
-  text-align: left;
-  width: 50%;
-  display:block;
-  padding: 10px;
-  /* border:1px solid rgb(216, 0, 0); */
-  border-radius: 5px;
-  background-color: rgb(241, 241, 241);
-  color:black;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  /* margin-bottom: 10px; */
-}
-.btn1:hover{
-  background-color: rgb(102, 100, 100);
-  color: white;
-
-  cursor: pointer;
-
-
-  /* scale: 1.0; */
-}
-
-.title{
-    margin-top: 60px;
-    margin-bottom:10px;
-    text-align: center;
-    font-size: 35px;
-    color: white !important;
-}
-
-.linka{
-  text-decoration: none;
-  color:white;
-}
-
-.modale {
-  padding-bottom: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-    z-index: 1000;
-    position: absolute;
-    /* position: absolute ; */
-    background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-
-    /* background-image: url('https://static.vecteezy.com/system/resources/previews/011/536/252/non_2x/mystical-and-celestial-elements-with-stars-planets-moons-and-hands-cosmic-starry-zodiac-elements-occult-esoteric-design-vector.jpg'); */
-    background-repeat: no-repeat;
-    background-size:cover;
-    border: 1px solid rgb(0, 0, 0);
-    right: 0;
-    top:0;
-    /* top:19%;
-    right:36%;; */
-    width: 100%;
-    height:max-content;
-    margin: 0 auto;
-    margin-top: -80px !important;
-}
-.modaleBtn{
   margin: 0 auto;
   width: 500px;
 }
-.nazad{
-  cursor: pointer;
+
+.btn{
+  display:block;
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+  /* background-color: aqua; */
+  background-color: #f8fbff;
+  color: black;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+}
+.btn:hover{
+background-color: rgb(92, 86, 86);
+color: white;
+cursor: pointer;
+scale:1.1;
+}
+.btn1{
+text-align: left;
+width: 50%;
+display:block;
+/* padding: 10px; */
+/* border:1px solid rgb(216, 0, 0); */
+border-radius: 5px;
+background-color: rgb(241, 241, 241);
+color:black;
+margin: 0 auto;
+margin-bottom: 10px;
+/* margin-bottom: 10px; */
+-webkit-tap-highlight-color: rgb(241, 241, 241);
+-webkit-tap-highlight-color: transparent;
+}
+.red{
+  color: red
+}
+
+.btn1:hover{
+background-color: rgb(102, 100, 100);
+color: white;
+
+cursor: pointer;
+
+
+/* scale: 1.0; */
+}
+
+.title{
+  margin-top: 60px;
+  margin-bottom:10px;
   text-align: center;
+  font-size: 35px;
   color: white !important;
-  margin-top:20px;
-  margin-bottom: 10px;
+}
+
+.linka{
+text-decoration: none;
+color:white;
+}
+
+.modale {
+padding-bottom: 4px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+overflow: hidden;
+  z-index: 1000;
+  position: absolute;
+  /* position: absolute ; */
+  background-color: #D9AFD9;
+background-image: -webkit-gradient(linear, left bottom, left top, from(#D9AFD9), to(#97D9E1));
+background-image: -o-linear-gradient(bottom, #D9AFD9 0%, #97D9E1 100%);
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+  /* background-image: url('https://static.vecteezy.com/system/resources/previews/011/536/252/non_2x/mystical-and-celestial-elements-with-stars-planets-moons-and-hands-cosmic-starry-zodiac-elements-occult-esoteric-design-vector.jpg'); */
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: 1px solid rgb(0, 0, 0);
+  right: 0;
+  top:0;
+  /* top:19%;
+  right:36%;; */
+  width: 100%;
+  height:-webkit-max-content;
+  height:-moz-max-content;
+  height:max-content;
+  margin: 0 auto;
+  margin-top: -80px !important;
+}
+.modaleBtn{
+margin: 0 auto;
+width: 500px;
+}
+.nazad{
+cursor: pointer;
+text-align: center;
+color: white !important;
+margin-top:20px;
+margin-bottom: 10px;
 }
 .nazad:hover{
-  scale: 1.1;
+scale: 1.1;
 }
 
 .animated{
-    display: none;
+  display: none;
 }
 .modalochka2{
-  padding-bottom: 42px;
+padding-bottom: 42px;
 }
 
 .showed{
-    display: block;
+  display: block;
 }
 .modalochka{
-  height: 100%;
+height: 100%;
 }
 #formElem{
-  height: 100%;
-  
+height: 100%;
+
 }
 
 .flip-card {
-    margin: 10px;
-    background-color: transparent;
-    width: 90%;
-    height: 698px;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 90%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  /* .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  } */
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 87%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-    transform: rotateY(180deg);
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    border-radius: 20px;
-    border: 14px black double;
-    /* background-image:url('https://i.ibb.co/MCF4PzJ/zxc.jpg'); */
-    /* background-image:url('https://i.ibb.co/c2v9kZc/image.png'); */
-    background-color: aliceblue;
-    /* background-image:url('./../../../public/image.svg'); */
-    background-size: contain;
-    color: white;
-    /* transform: rotateY(180deg); */
-    /* animation: rotatez 1s ease-in-out ;
-    animation-iteration-count: 1;
-    -webkit-animation:  rotatez 1s ease-in-out ; */
+  margin: 10px;
+  background-color: transparent;
+  width: 90%;
+  height: 698px;
+  /* border: 1px solid #f1f1f1; */
+  -webkit-perspective: 1000px;
+          perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
-  }
-  /* @-webkit-keyframes rotatez{
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-  } */
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
 
-  /* @keyframes rotatez{
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-  } */
+/* Do an horizontal flip when you move the mouse over the flip box container */
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+} */
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 87%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Style the back side */
+.flip-card-back {
+  border-radius: 20px;
+  border: 14px black double;
+  /* background-image:url('https://i.ibb.co/MCF4PzJ/zxc.jpg'); */
+  /* background-image:url('https://i.ibb.co/c2v9kZc/image.png'); */
+  background-color: aliceblue;
+  /* background-image:url('./../../../public/image.svg'); */
+  background-size: contain;
+  color: white;
+  /* transform: rotateY(180deg); */
+  /* animation: rotatez 1s ease-in-out ;
+  animation-iteration-count: 1;
+  -webkit-animation:  rotatez 1s ease-in-out ; */
+
+}
+/* @-webkit-keyframes rotatez{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+} */
+
+/* @keyframes rotatez{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+} */
 
 .images{
-    width: 82%;
-    height: 100%;
+  width: 82%;
+  height: 100%;
 }
 
 .CreateCarFileds{
-    text-align: center;
+  text-align: center;
 }
 
 .hid{
-    display: none;
+  display: none;
 }
 
 .sele{
-  display:flex;
-  justify-content: center;
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 .textHome{
-  text-align: center;
-  margin-top: 20px;
-  color:aliceblue ;
+text-align: center;
+margin-top: 20px;
+color:aliceblue ;
 }
 
 .para{
-  color:black;
-  padding: 50px;
-  padding-top: 25px;
-  font-size: 17px;
+color:black;
+padding: 50px;
+padding-top: 25px;
+font-size: 17px;
 }
 .highText{
-  /* padding-top: 60px; */
-  color: black;
-  margin-bottom: 10px;
+/* padding-top: 60px; */
+color: black;
+margin-bottom: 10px;
 }
 .imageHead{
-  width: 20%;
-  height: 20%;
+width: 20%;
+height: 20%;
 }
 .imageHead__two{
-  margin-top: -45px;
+margin-top: -45px;
 }
 
 @media screen and (max-width:600px){
-  .main{
-    width: 100%;
-  }
-  .flip-card{
-    height: 500px;
-  }
-  .flip-card-back{
-    width: 83%;
-  }
-  .modale{
-    width: 100%;
-    height: auto;
-    /* position: relative; */
-    right: 0;
-    margin: 0 auto;
-    padding-bottom: 10px;
-  }
-  .modaleBtn{
-    width: 100%;
-  }
-  .imageHead__two{
-    margin-top: 4px;
-    display: inline-block;
-    vertical-align:bottom
-  }
-  .btn1{
-    height: 60px;
-    display: flex;
-    align-items: center;
-  }
-  .flip-card{
-    margin: 0 auto;
-    padding: 5px;
-  }
-  .highText{
-    margin-top: 3px;
-  }
-  .para{
-    font-size: 10px;
-    padding: 40px;
-    padding-top: 10px;
-  }
-  .title{
-    font-size: 20px;
-  }
-  .btn1{
-    margin-bottom: 7px;
-  }
-  .textObolon{
-    font-size: 13px;
-  }
-  .textZodiac {
-    font-size: 8px !important;
-  }
+.main{
+  width: 100%;
+}
+.flip-card{
+  height: 500px;
+}
+.flip-card-back{
+  width: 83%;
+}
+.modale{
+  width: 100%;
+  height: auto;
+  /* position: relative; */
+  right: 0;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.modaleBtn{
+  width: 100%;
+}
+.imageHead__two{
+  margin-top: 4px;
+  display: inline-block;
+  vertical-align:bottom
+}
+.btn1{
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flip-card{
+  margin: 0 auto;
+  padding: 5px;
+}
+.highText{
+  margin-top: 3px;
+}
+.para{
+  font-size: 10px;
+  padding: 40px;
+  padding-top: 10px;
+}
+.title{
+  font-size: 20px;
+}
+.btn1{
+  margin-bottom: 7px;
+}
+.textObolon{
+  font-size: 13px;
+}
+.textZodiac {
+  font-size: 8px !important;
+}
 }
 
 .btnSign{
-  margin-top: 80px;
-  
+margin-top: 80px;
+
 }
 
 .pokazatZad{
-  opacity: 1;
-  pointer-events: visible;
-  /* display: block; */
+opacity: 1;
+pointer-events: visible;
+/* display: block; */
 }
 
 .scrytZad{
-  opacity: 0;
-  pointer-events: none
-  /* display: none; */
+opacity: 0;
+pointer-events: none
+/* display: none; */
 }
 
 .textNaz{
-  text-align: center;
-  margin-bottom: 20px;
-  color: white !important;
+text-align: center;
+margin-bottom: 20px;
+color: white !important;
 }
 .btnSign2{
-  opacity: 0;
-  margin-top: 8px;
+opacity: 0;
+margin-top: 8px;
 
 }
 .btnSign3{
-  opacity: 0;
-  margin-top: 8px;
+opacity: 0;
+margin-top: 8px;
 }
 
 /* .vkuiSplitCol {
-  background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM=');
-  height: 120vh;
-  padding-bottom: 25px;
+background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM=');
+height: 120vh;
+padding-bottom: 25px;
 } */
 .main1{
-  /* background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM='); */
-  /* height: 100vh; */
-  height: 100%;
-  /* padding-top: 40px; */
- 
-  /* background-color: #FF3CAC;
-  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-  /* 
-   */
-   /* background-color: #FF3CAC;
-   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-   
-   
-   
-   
-   
-   
+/* background-image: url('https://media.istockphoto.com/id/1157427003/vector/space-seamless-pattern-with-zodiac-constellations-galaxy-stars-planets-in-outer-space.jpg?s=612x612&w=0&k=20&c=DmDh4mkLgvNfMHrlaDjIuHgHEXcUtFWZTgrD8KJMycM='); */
+/* height: 100vh; */
+height: 100%;
+/* padding-top: 40px; */
 
+/* background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+/* 
+ */
+ /* background-color: #FF3CAC;
+ background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
  
-  
-  /* background: linear-gradient(180deg, rgba(10,10,10,10.7763480392156863) 0%, rgba(127,200,255,1) 50%, rgba(10,10,10,10.804359243697479) 100%); */
-  /* height: 100vh; */
+ 
+ 
+ 
+ 
+ 
+
+
+
+/* background: linear-gradient(180deg, rgba(10,10,10,10.7763480392156863) 0%, rgba(127,200,255,1) 50%, rgba(10,10,10,10.804359243697479) 100%); */
+/* height: 100vh; */
 }
 /* .vkui--sizeX-none{
-  height: auto;
+height: auto;
 } */
 .imageZodiac{
-  height: 40%;
-  width: 40%;
+height: 40%;
+width: 40%;
 }
 
 .batya{
-  display: flex;
-  flex-wrap: wrap;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.spin{
+  display:flex;
   justify-content: center;
-}
-
-.textZodiac{
-  font-size: 10px;
-}
-
-.obolon{
-  display: flex;
-  flex-wrap: wrap;
-  height: 60px;
-  align-items: center;
   width: 100%;
 }
 
+.textZodiac{
+font-size: 10px;
+}
+
+.obolon{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+height: 60px;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+width: 100%;
+}
+
 .imageZod{
-  height: 40px;
-  margin-right: 5px;
-  padding: 10px;
+height: 30px;
+margin-right: 5px;
+padding: 10px;
 }
 .textObolon{
-  width: 99%;
+width: 99%;
 }
 
 .col-md-12{
-  display: flex;
-  justify-content: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 .animate-charcter
 {
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #6e6d70 29%,
-    #706b6d 67%,
-    #f7f5cf 100%
-  );
-  margin-top: 100px;
-  font-size: 17px !important;
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 190px;
+ text-transform: uppercase;
+background-image: -o-linear-gradient(
+  315deg,
+  #231557 0%,
+  #6e6d70 29%,
+  #706b6d 67%,
+  #f7f5cf 100%
+);
+background-image: linear-gradient(
+  -225deg,
+  #231557 0%,
+  #6e6d70 29%,
+  #706b6d 67%,
+  #f7f5cf 100%
+);
+margin-top: 100px;
+font-size: 17px !important;
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-animation: textclip 2s linear infinite;
+        animation: textclip 2s linear infinite;
+display: inline-block;
+    font-size: 190px;
+}
+
+@-webkit-keyframes textclip {
+to {
+  background-position: 200% center;
+}
 }
 
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+to {
+  background-position: 200% center;
+}
 }
 
 .shirina{
-  width: 50%;
+width: 50%;
 }
 
 .zagryzka{
-  margin-top: 25px;
+margin-top: 25px;
 }
 
 @media screen and (max-width:321px){
-  .textObolon{
-    font-size: 10px;
-  }
-  .textZodiac{
-    font-size: 8px;
-  }
-  .imageZod{
-    height: 20px;
-  }
+.textObolon{
+  font-size: 10px;
+}
+.textZodiac{
+  font-size: 8px;
+}
+.imageZod{
+  height: 20px;
+}
 }
 
 
 
 .lds-spinner {
-  color: official;
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  
+color: official;
+display: inline-block;
+position: relative;
+width: 80px;
+height: 80px;
+margin: 0 auto;
+
 }
 .lds-spinner div {
-  transform-origin: 40px 40px;
-  animation: lds-spinner 1.2s linear infinite;
+-webkit-transform-origin: 40px 40px;
+    -ms-transform-origin: 40px 40px;
+        transform-origin: 40px 40px;
+-webkit-animation: lds-spinner 1.2s linear infinite;
+        animation: lds-spinner 1.2s linear infinite;
 }
 .lds-spinner div:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 37px;
-  width: 6px;
-  height: 18px;
-  border-radius: 20%;
-  background: #fff;
+content: " ";
+display: block;
+position: absolute;
+top: 3px;
+left: 37px;
+width: 6px;
+height: 18px;
+border-radius: 20%;
+background: #fff;
 }
 .lds-spinner div:nth-child(1) {
-  transform: rotate(0deg);
-  animation-delay: -1.1s;
+-webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+-webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
 }
 .lds-spinner div:nth-child(2) {
-  transform: rotate(30deg);
-  animation-delay: -1s;
+-webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+-webkit-animation-delay: -1s;
+        animation-delay: -1s;
 }
 .lds-spinner div:nth-child(3) {
-  transform: rotate(60deg);
-  animation-delay: -0.9s;
+-webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+-webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
 }
 .lds-spinner div:nth-child(4) {
-  transform: rotate(90deg);
-  animation-delay: -0.8s;
+-webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+-webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
 }
 .lds-spinner div:nth-child(5) {
-  transform: rotate(120deg);
-  animation-delay: -0.7s;
+-webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+        transform: rotate(120deg);
+-webkit-animation-delay: -0.7s;
+        animation-delay: -0.7s;
 }
 .lds-spinner div:nth-child(6) {
-  transform: rotate(150deg);
-  animation-delay: -0.6s;
+-webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+        transform: rotate(150deg);
+-webkit-animation-delay: -0.6s;
+        animation-delay: -0.6s;
 }
 .lds-spinner div:nth-child(7) {
-  transform: rotate(180deg);
-  animation-delay: -0.5s;
+-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+-webkit-animation-delay: -0.5s;
+        animation-delay: -0.5s;
 }
 .lds-spinner div:nth-child(8) {
-  transform: rotate(210deg);
-  animation-delay: -0.4s;
+-webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+        transform: rotate(210deg);
+-webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s;
 }
 .lds-spinner div:nth-child(9) {
-  transform: rotate(240deg);
-  animation-delay: -0.3s;
+-webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+        transform: rotate(240deg);
+-webkit-animation-delay: -0.3s;
+        animation-delay: -0.3s;
 }
 .lds-spinner div:nth-child(10) {
-  transform: rotate(270deg);
-  animation-delay: -0.2s;
+-webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+-webkit-animation-delay: -0.2s;
+        animation-delay: -0.2s;
 }
 .lds-spinner div:nth-child(11) {
-  transform: rotate(300deg);
-  animation-delay: -0.1s;
+-webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+        transform: rotate(300deg);
+-webkit-animation-delay: -0.1s;
+        animation-delay: -0.1s;
 }
 .lds-spinner div:nth-child(12) {
-  transform: rotate(330deg);
-  animation-delay: 0s;
+-webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+        transform: rotate(330deg);
+-webkit-animation-delay: 0s;
+        animation-delay: 0s;
+}
+@-webkit-keyframes lds-spinner {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
 }
 @keyframes lds-spinner {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
 }
 .lds-spinner{
-  width: 30%;
+/* width: 30%; */
 }
 .zagzag{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }

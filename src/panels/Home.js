@@ -17,6 +17,7 @@ function Home(){
 	  const [open,setOpen] = useState(true)
 	  const [pokazivay,setPoazivay] = useState()
 	  const [izvinite,setizvinite] = useState(false)
+	  const [conditionValue,setContditionValue] = useState(false)
 
 	  const smenaVida = ()=>{
 		setOpen(false);
@@ -44,14 +45,34 @@ function Home(){
 		setizvinite(true)
 	  }
 
+	  const izvinite2 = ()=>{
+		setizvinite(false)
+	  }
+
 	  const load1 = ()=>{
 		setLoading(true)
 	  }
+
+	  window.addEventListener('online',  updateOnlineStatus);
+	  window.addEventListener('offline', updateOnlineStatus);
+	  let condition
+		function updateOnlineStatus(event) {
+		 condition = navigator.onLine ? "online" : "offline";
+		// document.body.className = condition;
+		console.log(condition);
+		if (condition === 'offline'){
+			setContditionValue(true)
+		}
+		if (condition === 'online'){
+			setContditionValue(false)
+		}
+		
+		}
 	
 	  return (
 		<>
 		<div className={`modale animated ${open ? 'showed' : ''} `}>
-			<CreateCarForm setCars={setCars} smenaVida={smenaVida}  load={load} izvinite1={izvinite1} load1={load1}/>
+			<CreateCarForm setCars={setCars} smenaVida={smenaVida}  load={load} izvinite1={izvinite1} load1={load1} conditionValue={conditionValue} izvinite2={izvinite2}/>
 		</div> 
 		<div className={open ? '' : 'main1'}>
 	
@@ -71,11 +92,14 @@ function Home(){
 
   
 		  <div className='batya' >
+		 	{conditionValue && <p className ='red'>Потеряна связь с интернетом</p>}
 		  	
 			  {isLoading? 
 			  <div className='zagzag'>
 				<h1 className='zagryzka'>Идет загрузка</h1>
-				<div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+				<div className='spin'>
+					<div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+				</div>
 			  </div>
 			   : 
 				
@@ -96,7 +120,8 @@ function Home(){
 			  ))
 			 
 			  }
-			  {izvinite?<p className='textHome'>Попробуйте выбрать знак через несколько минут</p>  : '' }
+			  {izvinite?<p className='textHome red'>Попробуйте выбрать знак через несколько минут</p>  : '' }
+			  
 		  </div>
 		</div>
 		</div>

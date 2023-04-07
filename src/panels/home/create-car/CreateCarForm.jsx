@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 
-const CreateCarForm = ({setCars,smenaVida,oven1,load,izvinite1,load1}) => {
+const CreateCarForm = ({setCars,smenaVida,oven1,load,izvinite1,load1,conditionValue,izvinite2}) => {
   const [zad,setZad] = useState(false)
   const [telec,setTelec] = useState(false)
 
@@ -85,9 +85,10 @@ function fooButtonClick()
 
   const handleSubmitKozerog = (event) => {
     event.preventDefault();
-  //   if (zad === false){
-  //     setTimeout(load,5000)
-  //  } 
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
   setCars([])
   load1()
     async function ha(){
@@ -97,6 +98,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Козерог'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -119,6 +121,10 @@ function fooButtonClick()
   };
   const handleSubmitOven = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     async function ha(){
@@ -128,6 +134,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Овен'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -147,8 +154,11 @@ function fooButtonClick()
 
   };
   const handleSubmitTaurus = (event) => {
-
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     async function ha(){
@@ -158,6 +168,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Телец'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -179,9 +190,12 @@ function fooButtonClick()
   };
   const handleSubmitGemini = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
-
     async function ha(){
       try {
         smenaVida();
@@ -189,6 +203,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Близнецы'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -210,6 +225,10 @@ function fooButtonClick()
   };
   const handleSubmitCancer = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -220,6 +239,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Рак'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -241,6 +261,10 @@ function fooButtonClick()
   };
   const handleSubmitLeo = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -251,6 +275,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Лев'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -272,6 +297,10 @@ function fooButtonClick()
   };
   const handleSubmitVirgio = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -282,6 +311,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Дева'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -303,6 +333,10 @@ function fooButtonClick()
   };
   const handleSubmitLibra = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -313,6 +347,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Весы'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -334,6 +369,10 @@ function fooButtonClick()
   };
   const handleSubmitScorpio = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -344,6 +383,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Скорпион'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -365,6 +405,10 @@ function fooButtonClick()
   };
   const handleSubmitSagittarius = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -375,6 +419,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Стрелец'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -396,6 +441,10 @@ function fooButtonClick()
   };
   const handleSubmitAquarius = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     setTimeout(load,2000)
@@ -406,6 +455,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Водолей'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -427,6 +477,10 @@ function fooButtonClick()
   };
   const handleSubmitPisces = (event) => {
     event.preventDefault();
+    if (conditionValue){
+      smenaVida();
+      return;
+    }
     setCars([])
     load1()
     async function ha(){
@@ -436,6 +490,7 @@ function fooButtonClick()
         const data = response.data.content.text[0].content
         const dataName = 'Рыбы'
         createCar(event,data,dataName)
+        izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
         } 
@@ -537,7 +592,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Virgo_symbol_%28fixed_width%29.svg/80px-Virgo_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Дева</div>
-                    <div className='textZodiac'>23 августа - 22 сентября</div>
+                    <div className='textZodiac'>23 августа - 23 сентября</div>
                   </div>
                 </div>
               </button>
