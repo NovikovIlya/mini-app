@@ -92,16 +92,24 @@ function Home(){
 
   
 		  <div className='batya' >
-		 	{conditionValue && <p className ='red'>Потеряна связь с интернетом</p>}
+			<div className='cond'>
+				{conditionValue && <p className ='red'>Потеряна связь с интернетом</p>}
+			</div>
+			
+			
+		 	
 		  	
 			  {isLoading? 
-			  <div className='zagzag'>
-				<h1 className='zagryzka'>Идет загрузка</h1>
-				<div className='spin'>
-					<div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+			<div className='zagMain'>
+				<div className='zagzag'>
+					<h1 className='zagryzka'>Идет загрузка</h1>
+					<div className='spin'>
+						<div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					</div>
 				</div>
-			  </div>
+			</div>
 			   : 
+
 				
 				 cars.map(car => (
 				<div key={car.id} className="flip-card">

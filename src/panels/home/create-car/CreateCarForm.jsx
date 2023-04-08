@@ -557,12 +557,13 @@ function fooButtonClick()
           </div>
         
             
-            
-            <p className={`nazad ${zad ? 'pokazatZad' : 'scrytZad'}`}  onClick={()=>{
-            smenaVida()
-            // Recomend()
+            <div className='nazadMain'>
+              <p className={`nazad ${zad ? 'pokazatZad' : 'scrytZad'}`}  onClick={()=>{
+              smenaVida()
+              // Recomend()
 
-            }}>←Назад</p>
+              }}>←Назад</p>
+            </div>
             <div className='modaleBtn'>
             <div className={`textNaz ${zad? 'scrytZad' : ''} `} >Выбери свой знак</div>
              

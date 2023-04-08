@@ -134,9 +134,14 @@ vertical-align: middle;
 color: white !important;
 margin-top:20px;
 margin-bottom: 10px;
+width: 180px;
 }
 .nazad:hover{
 scale: 1.1;
+}
+.nazadMain{
+  display: flex;
+  justify-content: center;
 }
 
 .animated{
@@ -296,12 +301,29 @@ margin-top: -45px;
   position: absolute;
   bottom: 0;
 }
+.cond{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.zagMain{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width:600px){
   .btn:hover,.btn1:hover{
-    color:black;
+    cursor: default !important;
+    
+    color:black !important;
     background-color: rgb(241, 241, 241);
     -webkit-tap-highlight-color: rgb(241, 241, 241)
+  }
+  .textObolon:not([disabled]):hover,.textZodiac:not([disabled]):hover{
+    cursor: pointer;
   }
  .vkui--sizeX-none{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
