@@ -40,7 +40,7 @@ body{
 background-color: rgb(92, 86, 86);
 color: white;
 cursor: pointer;
-scale:1.1;
+/* scale:1.1; */
 }
 .btn1{
 text-align: left;
@@ -84,6 +84,10 @@ text-decoration: none;
 color:white;
 }
 
+.zero{
+  display: none;
+}
+
 
 
 .modale {
@@ -101,14 +105,20 @@ overflow: visible;
 background-image: -webkit-gradient(linear, left bottom, left top, from(#D9AFD9), to(#97D9E1));
 background-image: -o-linear-gradient(bottom, #D9AFD9 0%, #97D9E1 100%);
 background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-background: #200122;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #000000 , #6f0000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #000000 , #6f0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-gradient(linear, left bottom, left top, from(rgb(0,0,0)) , to(rgb(111,0,0)));
+background: -webkit-linear-gradient(linear, left bottom, left top, from(rgb(0,0,0)) , to(rgb(111,0,0)));
+background: -o-linear-gradient(bottom, rgb(0,0,0) , rgb(111,0,0));
+background: linear-gradient(to top, rgb(0,0,0) , rgb(111,0,0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
   /* background-image: url('https://static.vecteezy.com/system/resources/previews/011/536/252/non_2x/mystical-and-celestial-elements-with-stars-planets-moons-and-hands-cosmic-starry-zodiac-elements-occult-esoteric-design-vector.jpg'); */
   background-repeat: no-repeat;
   background-size:cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   border: 1px solid rgb(0, 0, 0);
   top: 0;
   right: 0;

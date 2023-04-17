@@ -74,7 +74,7 @@ function Home(){
 		<div className={`modale animated ${open ? 'showed' : ''} `}>
 			<CreateCarForm setCars={setCars} smenaVida={smenaVida}  load={load} izvinite1={izvinite1} load1={load1} conditionValue={conditionValue} izvinite2={izvinite2}/>
 		</div> 
-		<div className={open ? '' : 'main1'}>
+		<div className={open ? 'zero' : 'main1'}>
 	
 
 		

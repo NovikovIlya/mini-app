@@ -82,6 +82,14 @@ function fooButtonClick()
   const MDAs = ()=>{
     console.log(value);
   }
+  const timeScroll = ()=>{
+    // if (document.querySelector('#wk_layer_wrap') !== null ){
+      useEffect(() => {
+      //  document.querySelector('#wk_layer_wrap').scroll(0,-500)
+      window.scrollTo(0,0)
+      }, [])
+  
+  }
 
   const handleSubmitKozerog = (event) => {
     event.preventDefault();
@@ -95,7 +103,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/capricorn/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Козерог'
@@ -103,6 +111,7 @@ function fooButtonClick()
         izvinite2()
         if (zad === false){
            setTimeout(fooButtonClick,1000)
+           setTimeout(timeScroll,1000)
         } 
   
         console.log(data);
@@ -114,6 +123,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
 
     }
@@ -133,7 +143,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/aries/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Овен'
@@ -152,6 +162,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -169,7 +180,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/taurus/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Телец'
@@ -188,6 +199,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -206,7 +218,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/gemini/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Близнецы'
@@ -225,6 +237,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -240,11 +253,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/cancer/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Рак'
@@ -263,6 +276,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -278,11 +292,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/leo/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Лев'
@@ -301,6 +315,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -317,11 +332,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/virgo/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Дева'
@@ -340,6 +355,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -355,11 +371,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/libra/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Весы'
@@ -378,6 +394,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -393,11 +410,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/scorpio/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Скорпион'
@@ -416,6 +433,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -431,11 +449,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/sagittarius/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Стрелец'
@@ -454,6 +472,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -469,11 +488,11 @@ function fooButtonClick()
     }
     setCars([])
     load1()
-    setTimeout(load,2000)
+    // setTimeout(load,2000)
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/aquarius/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Водолей'
@@ -492,6 +511,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -510,7 +530,7 @@ function fooButtonClick()
     async function ha(){
       try {
         smenaVida();
-        window.scrollBy(0, 0)
+        
         const response = await axios.get(`https://atoma-horoscope.onrender.com/horoscope/pisces/full/`)
         const data = response.data.content.text[0].content
         const dataName = 'Рыбы'
@@ -529,6 +549,7 @@ function fooButtonClick()
       }
       finally{
         setTimeout(load,100)
+        setTimeout(timeScroll,1000)
       }
     }
     ha()
@@ -562,7 +583,7 @@ function fooButtonClick()
               smenaVida()
               // Recomend()
 
-              }}>←Назад</p>
+              }}>«Назад</p>
             </div>
             <div className='modaleBtn'>
             <div className={`textNaz ${zad? 'scrytZad' : ''} `} >Выбери свой знак</div>
@@ -618,7 +639,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Virgo_symbol_%28fixed_width%29.svg/80px-Virgo_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Дева</div>
-                    <div className='textZodiac'>23 августа - 23 сентября</div>
+                    <div className='textZodiac'>24 августа - 23 сентября</div>
                   </div>
                 </div>
               </button>
@@ -627,7 +648,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Libra_symbol_%28fixed_width%29.svg/80px-Libra_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Весы</div>
-                    <div className='textZodiac'>23 сентября - 23 октября</div>
+                    <div className='textZodiac'>24 сентября - 23 октября</div>
                   </div>
                 </div>
               </button>
@@ -663,7 +684,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Aquarius_symbol_%28fixed_width%29.svg/80px-Aquarius_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Водолей</div>
-                    <div className='textZodiac'>20 января - 18 февраля</div>
+                    <div className='textZodiac'>20 января - 19 февраля</div>
                   </div>
                 </div>
               </button>
@@ -672,7 +693,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_symbol_%28fixed_width%29.svg/80px-Pisces_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Рыбы</div>
-                    <div className='textZodiac'>19 февраля - 20 марта</div>
+                    <div className='textZodiac'>20 февраля - 20 марта</div>
                   </div>
                 </div>
               </button>

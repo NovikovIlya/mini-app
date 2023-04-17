@@ -7,7 +7,29 @@ import Home from './panels/Home';
 import Persik from './panels/Persik';
 
 const App = () => {
+	useEffect(()=>{
+		async function hahaha(){
+			if(window.localStorage.getItem('dataKey') === '1'){
+				return
+			
+			}else {
+				const pushii = await bridge.send('VKWebAppAllowNotifications')
+				const res = pushii.result
+				window.localStorage.setItem('dataKey', '1')
+				if (res !== true){
+					console.log(pushii);
+				}else {
+					return console.log(pushii);
+				}
+			}
+		}
+		setTimeout(hahaha,2000)
+  		
+  
+	},[])
 	
+
+
 	bridge.send('VKWebAppResizeWindow', {
 		width: 800,
 		// height: 1370
@@ -29,6 +51,7 @@ const App = () => {
 
 	useEffect(() => {
 		async function fetchData() {
+			// bridge.send("VKWebAppAllowNotifications");
 			const user = await bridge.send('VKWebAppGetUserInfo');
 			console.log(user)
 			setUser(user);
