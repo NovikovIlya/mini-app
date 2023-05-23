@@ -697,6 +697,15 @@ function fooButtonClick()
                   </div>
                 </div>
               </button>
+              {/* <button className='btn1'  onClick={handleSubmitPisces}>
+               <div className='obolon'>
+                  <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_symbol_%28fixed_width%29.svg/80px-Pisces_symbol_%28fixed_width%29.svg.png'></img>
+                  <div className='shirina'>
+                    <div className='textObolon'></div>
+                    <div className='textZodiac'>Подпишитесь на уведомления</div>
+                  </div>
+                </div>
+              </button> */}
             </div>
             
             
