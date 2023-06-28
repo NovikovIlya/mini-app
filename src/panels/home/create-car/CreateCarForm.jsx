@@ -630,7 +630,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Leo_symbol_%28fixed_width%29.svg/80px-Leo_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Лев</div>
-                    <div className='textZodiac'>23 июля - 23 августа</div>
+                    <div className='textZodiac'>23 июля - 21 августа</div>
                   </div>
                 </div>
               </button>
@@ -639,7 +639,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Virgo_symbol_%28fixed_width%29.svg/80px-Virgo_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Дева</div>
-                    <div className='textZodiac'>24 августа - 23 сентября</div>
+                    <div className='textZodiac'>22 августа - 23 сентября</div>
                   </div>
                 </div>
               </button>
@@ -666,7 +666,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Sagittarius_symbol_%28fixed_width%29.svg/80px-Sagittarius_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Стрелец</div>
-                    <div className='textZodiac'>23 ноября - 21 декабря</div>
+                    <div className='textZodiac'>23 ноября - 22 декабря</div>
                   </div>
                 </div>
               </button>
@@ -675,7 +675,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Capricornus_symbol_%28fixed_width%29.svg/80px-Capricornus_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Козерог</div>
-                    <div className='textZodiac'>22 декабря - 19 января</div>
+                    <div className='textZodiac'>23 декабря - 20 января</div>
                   </div>
                 </div>
               </button>
@@ -684,7 +684,7 @@ function fooButtonClick()
                   <img className='imageZod' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Aquarius_symbol_%28fixed_width%29.svg/80px-Aquarius_symbol_%28fixed_width%29.svg.png'></img>
                   <div className='shirina'>
                     <div className='textObolon'>Водолей</div>
-                    <div className='textZodiac'>20 января - 19 февраля</div>
+                    <div className='textZodiac'>21 января - 19 февраля</div>
                   </div>
                 </div>
               </button>
